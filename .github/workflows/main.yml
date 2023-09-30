@@ -2,7 +2,7 @@ name: Deploy website
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Push to server and deploy
-        run: cd /var/www/html && git pull origin master
+        run: cd /var/www/html && git pull origin main
